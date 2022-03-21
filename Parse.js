@@ -20,8 +20,6 @@ function ParseData(data){
     style.innerText = "p{display: inline;} div{display: inline; font-family: 'Roboto', sans-serif;}"
 
     document.head.append(style)
-    
-    var ParsedData = data.replaceAll("<b>", "<p>")
 
     //Make the color change
     ParsedData.split("<color=").forEach( (value, index) => {
